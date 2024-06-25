@@ -9,6 +9,6 @@ app.engine('html', require('ejs').renderFile);
 
 app.get('/', (req, res)=>res.render('index.html'));
 
-app.post('/', (req,res)=>res.send('Hello from post'));
+app.post('/', (req,res)=>res.render('events.html'));
 
 app.listen(3000, ()=>console.log('server on port 3000'));
